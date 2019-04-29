@@ -15,4 +15,6 @@ def process_line(line, hist):
         word = word.lower()
         hist[word] = hist.get(word, 0) + 1
 
-hist = process_file('emma.txt')
+hist = process_file('alice.txt')
+for key in hist:
+    print ("The word '" + key + "' occurs  " + str(hist[key]) + "  times!!!")
